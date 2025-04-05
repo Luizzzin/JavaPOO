@@ -1,6 +1,7 @@
 import models.Carro;
 import models.Fabricante;
 import models.ModelosAno;
+import models.ContaBancaria;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +26,12 @@ public class Main {
         fab.VeiculoDoAno();
         ModelosAno model = new ModelosAno();
         model.VeiculoDoAno();
+        System.out.println("\n---------------------\n");
+
+        //encapsulamento!!!
+        ContaBancaria conta = new ContaBancaria();
+
+        conta.Depositar(10.50);
+        System.out.println(conta.getSaldo());
     }
 }
