@@ -1,4 +1,6 @@
 import models.Carro;
+import models.Fabricante;
+import models.ModelosAno;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +16,14 @@ public class Main {
 
         System.out.println("\n---------------------");
 
+
         carro1.MoverVeiculo();
 
+        System.out.println("\n---------------------\n");
+
+        Fabricante fab = new Fabricante();
+        fab.VeiculoDoAno();
+        ModelosAno model = new ModelosAno();
+        model.VeiculoDoAno();
     }
 }
